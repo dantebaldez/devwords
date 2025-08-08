@@ -1,21 +1,17 @@
-import { ThemeProvider } from 'styled-components';
-import { useTheme } from './themes/ThemeContext';
-import { lightTheme } from './themes/light';
-import { darkTheme } from './themes/dark';
-import GlobalStyle from './styles/GlobalStyle';
+import { ThemeProvider } from "styled-components";
+import { lightTheme } from "./themes/light";
+import { darkTheme } from "./themes/dark";
+import GlobalStyle from "./styles/GlobalStyle";
+import { useState } from "react";
+import { HomePage } from "./components/HomePage/HomePage";
 
-function App() {
-  const { theme, toggleTheme } = useTheme();
+export function App() {
+  const [isDark, setIsDark] = useState(false);
 
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
       <GlobalStyle />
-      <div style={{ padding: '2rem' }}>
-        <h1>DevWords 🚀</h1>
-        <button onClick={toggleTheme}>Alternar Tema</button>
-      </div>
+      <HomePage onToggleTheme={() => setIsDark(!isDark)} />
     </ThemeProvider>
   );
 }
-
-export default App;

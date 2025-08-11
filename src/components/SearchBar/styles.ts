@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const SearchWrapper = styled.div`
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
-  margin: 1.5rem 0 2rem 0; /* margem cima e baixo pra separar do Header e conteúdo */
+  justify-content: center;
+  margin: 1.5rem 0 2rem 0;
 `;
 
 export const SearchLabel = styled.label<{ $visuallyHidden?: boolean }>`

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "term": "Virtual DOM",
+    "definition": "Uma representação leve da UI usada para otimizar atualizações na árvore real do DOM.",
+    "tags": ["react", "performance"],
+    "aliases": ["vdom"]
+  },
+  {
+    "id": "2",
+    "term": "Tree shaking",
+    "definition": "Técnica de eliminar código não utilizado durante o bundle.",
+    "tags": ["build", "optimization"],
+    "aliases": []
+  },
+  {
+    "id": "3",
+    "term": "CORS",
+    "definition": "Cross-Origin Resource Sharing — política que define como recursos são compartilhados entre diferentes origens.",
+    "tags": ["network", "security"],
+    "aliases": ["Cross-Origin"]
+  }
+]

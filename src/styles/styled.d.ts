@@ -10,6 +10,9 @@ declare module "styled-components" {
       secondary: string;
       tertiary: string;
       accent: string;
+      cardBackground: string;
+      border: string;
+      textSecondary: string;
     };
   }
 }

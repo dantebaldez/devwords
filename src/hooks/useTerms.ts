@@ -1,29 +1,28 @@
-// src/hooks/useTerms.ts
 import { useEffect, useState } from "react";
 import type { Term } from "../types/term";
 
 export function useTerms() {
   const [terms, setTerms] = useState<Term[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<Error | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     let mounted = true;
+    setLoading(true);
 
-    (async () => {
-      try {
-        // Dynamic import: permite code-splitting e é fácil de substituir por fetch
-        const module = await import("../data/terms.json");
-        const data = module.default as Term[];
+    import("../data/terms.json")
+      .then((mod) => {
         if (!mounted) return;
-        setTerms(data);
-      } catch (err) {
+        const data = (mod.default ?? mod) as Term[];
+        setTerms(Array.isArray(data) ? data : []);
+        setLoading(false);
+      })
+      .catch((err) => {
         if (!mounted) return;
-        setError(err as Error);
-      } finally {
-        if (mounted) setLoading(false);
-      }
-    })();
+        console.error("Erro ao carregar termos:", err);
+        setError(String(err?.message ?? err));
+        setLoading(false);
+      });
 
     return () => {
       mounted = false;

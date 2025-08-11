@@ -2,22 +2,101 @@
   {
     "id": "1",
     "term": "Virtual DOM",
-    "definition": "Uma representação leve da UI usada para otimizar atualizações na árvore real do DOM.",
-    "tags": ["react", "performance"],
-    "aliases": ["vdom"]
+    "definition": "Representação leve da interface usada para otimizar a manipulação do DOM real."
   },
   {
     "id": "2",
-    "term": "Tree shaking",
-    "definition": "Técnica de eliminar código não utilizado durante o bundle.",
-    "tags": ["build", "optimization"],
-    "aliases": []
+    "term": "Tree Shaking",
+    "definition": "Técnica usada por bundlers para remover código não utilizado."
   },
   {
     "id": "3",
-    "term": "CORS",
-    "definition": "Cross-Origin Resource Sharing — política que define como recursos são compartilhados entre diferentes origens.",
-    "tags": ["network", "security"],
-    "aliases": ["Cross-Origin"]
+    "term": "Flexbox",
+    "definition": "Modelo CSS para layout de elementos em linha ou coluna."
+  },
+  {
+    "id": "4",
+    "term": "Hooks",
+    "definition": "Funções especiais do React que permitem usar estado e outras features."
+  },
+  {
+    "id": "5",
+    "term": "Webpack",
+    "definition": "Bundler de módulos para JavaScript que empacota ativos como CSS, imagens e arquivos JS para o navegador."
+  },
+  {
+    "id": "6",
+    "term": "TypeScript",
+    "definition": "Superset de JavaScript que adiciona tipagem estática opcional, compilando para JavaScript puro."
+  },
+  {
+    "id": "7",
+    "term": "REST API",
+    "definition": "Conjunto de regras e convenções para criar serviços web, usando métodos HTTP para manipular recursos."
+  },
+  {
+    "id": "8",
+    "term": "SPA (Single Page Application)",
+    "definition": "Arquitetura de aplicações web que carrega uma única página HTML e atualiza dinamicamente o conteúdo."
+  },
+  {
+    "id": "9",
+    "term": "Serverless",
+    "definition": "Modelo de desenvolvimento onde a infraestrutura é gerenciada por um provedor de nuvem, permitindo que os desenvolvedores foquem no código."
+  },
+  {
+    "id": "10",
+    "term": "JWT (JSON Web Token)",
+    "definition": "Padrão aberto para criar tokens baseados em JSON, usado para autenticação e troca de informações."
+  },
+  {
+    "id": "11",
+    "term": "GraphQL",
+    "definition": "Linguagem de consulta para APIs e um runtime para preencher essas consultas com seus dados existentes."
+  },
+  {
+    "id": "12",
+    "term": "Progressive Web Apps (PWAs)",
+    "definition": "Aplicações web que utilizam tecnologias modernas para entregar uma experiência similar a aplicativos nativos."
+  },
+  {
+    "id": "13",
+    "term": "Docker",
+    "definition": "Plataforma para desenvolver, enviar e executar aplicações dentro de contêineres."
+  },
+  {
+    "id": "14",
+    "term": "Kubernetes",
+    "definition": "Sistema de orquestração de contêineres open-source para automatizar o deploy, escalonamento e gerenciamento de aplicações."
+  },
+  {
+    "id": "15",
+    "term": "Machine Learning",
+    "definition": "Subcampo da inteligência artificial que permite que sistemas aprendam com dados sem serem explicitamente programados."
+  },
+  {
+    "id": "16",
+    "term": "Blockchain",
+    "definition": "Tecnologia de registro distribuído que permite transações seguras e descentralizadas."
+  },
+  {
+    "id": "17",
+    "term": "DevOps",
+    "definition": "Conjunto de práticas que integra o desenvolvimento de software (Dev) e as operações de TI (Ops)."
+  },
+  {
+    "id": "18",
+    "term": "Microsserviços",
+    "definition": "Abordagem arquitetural que estrutura uma aplicação como uma coleção de serviços pequenos e independentes."
+  },
+  {
+    "id": "19",
+    "term": "CI/CD",
+    "definition": "Práticas de Continuous Integration (Integração Contínua) e Continuous Delivery (Entrega Contínua) ou Deployment (Implantação Contínua)."
+  },
+  {
+    "id": "20",
+    "term": "NoSQL",
+    "definition": "Classe de sistemas de gerenciamento de banco de dados que não usam o modelo relacional tradicional."
   }
 ]

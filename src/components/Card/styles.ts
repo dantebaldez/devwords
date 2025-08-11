@@ -1,5 +1,5 @@
-// src/components/Card/styles.ts
 import styled from "styled-components";
+
 
 export const Container = styled.article`
   background: ${({ theme }) => theme.colors.cardBackground};

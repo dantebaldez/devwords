@@ -9,5 +9,9 @@ export const darkTheme: DefaultTheme = {
     secondary: "#03DAC6",
     tertiary: "#FFB74D",
     accent: "#82B1FF",
+
+    cardBackground: "#2a2a2a",
+    border: "#444444",
+    textSecondary: "#b0b0b0",
   },
 };

@@ -1,5 +1,4 @@
-// src/components/Card/Card.tsx
-import { FC } from "react";
+import type { FC } from "react";
 import { Container, Title, Description } from "./styles";
 
 interface CardProps {

@@ -9,5 +9,9 @@ export const lightTheme: DefaultTheme = {
     secondary: "#66CC99",
     tertiary: "#FFCC66",
     accent: "#336699",
+
+    cardBackground: "#ffffff",
+    border: "#dddddd",
+    textSecondary: "#666666",
   },
 };
